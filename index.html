@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>オススメ動画</title>
+</head>
+<body>
+    
+    <header>
+        <div class="headerInner">
+            <h1 class="logo">感情喚起動画提案サイト</h1>
+        </div>
+    </header>
+
+<main>
+    <div class="mainInner">
+        <h1>今のあなたにぴったりの動画をオススメするよ!</h1>
+
+            <p class="box2">どんな気分になりたい?</p>
+
+            
+            <select name="emotion" id="emotion">
+                <option value="fun">楽しい気持ち</option>
+                <option value="dog">犬!な気持ち</option>
+                <option value="sad">悲しい気持ち</option>
+                <option value="angry">ムカつく気持ち</option>
+                <option value="strange">不思議な気持ち</option>
+                </select>
+            
+
+            <p class="box3">どれくらいその気持ちになりたい？</p>
+            <input type="number" name="degree" id="degree" min="1" max="5" value="1"><br>
+
+            <button id="btn" type="submit">決まったら押してね!</button>
+            <p id="textResult"></p>
+            <p id="movieResult"></p>
+
+        <h1 class="addh">君が新しく動画を追加してみよう!</h1>
+
+        <p class="box4">登録する動画のURLを入力してね</p>
+                <input type="text"id="textbox" name="nickname" class="txt" placeholder="ここに入力してね"><br>
+
+                <p class="box5">その動画を見るとどんな気分になる？</p>
+                <select name="emotionAdd" id="emotionAdd">
+                <option value="fun">楽しい気持ち</option>
+                <option value="dog">犬!な気持ち</option>
+                <option value="sad">悲しい気持ち</option>
+                <option value="angry">ムカつく気持ち</option>
+                <option value="strange">不思議な気持ち</option>
+                </select>
+         
+            
+            <p class="box6">どれくらい感情にインパクトがある？</p>
+            <input type="number" name="degreeAdd" id="degreeAdd" min="1" max="5" value="1"><br>
+            
+            
+            
+            <button id="btn2" type="submit">登録するよ!!</button>
+
+            
+
+            
+
+    </div>
+</main>
+
+    
+    
+        
+    <script src="index.js"></script>
+</body>
+</html>
